@@ -4,15 +4,14 @@ struct node{
   int data;
   struct node *next;
 };
-void insertion(struct node *a){
+struct node * insertion(struct node *head){
   struct node *a;
   a=malloc(sizeof(struct node));
   a->data=50;
   a->next=head;
-  head=a;
 }
 int main(){
-  struct node *first=NULL;
+  struct node *head=NULL;
   struct node *second=NULL;
   struct node *third=NULL;
   struct node *fourth=NULL;
