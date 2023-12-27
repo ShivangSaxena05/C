@@ -27,7 +27,7 @@ int main(){
   third->next=fourth;
   fourth->data=40;
   fourth->next=NULL;
-  head=insertion(head)
+  head=insertion(head);
   while(head!=NULL){
     printf("%d \n",head->data);
     head=head->next;
